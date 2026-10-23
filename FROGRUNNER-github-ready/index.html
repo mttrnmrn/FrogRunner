@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frog Runner Multimedia Project</title>
+</head>
+<body class="pond">
+  <nav class="navbar navbar-expand-lg navbar-dark pond-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="fw-semibold">Frog Runner</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="game.html">2D Game</a></li>
+          <li class="nav-item"><a class="nav-link" href="three.html">3D Pond</a></li>
+          <li class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="badge rounded-pill badge-leaf mb-3">CTADMUSL Final Project</span>
+        <h1 class="display-5 fw-bold hero-title">Frog Runner: Pond World</h1>
+        <p class="lead small-muted">
+          A multimedia web app with a Canvas endless runner, a Three.js pond scene, and validated forms — packaged with Vite + ES modules.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-leaf btn-lg" href="game.html">Play 2D Game</a>
+          <a class="btn btn-ghost btn-lg" href="three.html">Explore 3D Pond</a>
+          <a class="btn btn-ghost btn-lg" href="forms.html">Open Forms</a>
+        </div>
+        <p class="mt-4 small-muted mb-0">
+          Tip: use <strong>Space</strong>/<strong>↑</strong> to jump.
+        </p>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card glass-card">
+          <div class="card-body">
+            <h5 class="fw-semibold mb-2">What’s inside</h5>
+            <ul class="mb-0 feature-list">
+              <li>Canvas endless runner (frog) with animation loop</li>
+              <li>Three.js scene with lighting + interaction</li>
+              <li>3 forms with JavaScript validation + clear errors</li>
+              <li>Modular ES6 code structure (import/export)</li>
+              <li>Bootstrap 5 responsive UI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/landing.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frog Runner - 2D Game</title>
+</head>
+<body class="pond game-shell">
+  <nav class="navbar navbar-expand-lg navbar-dark pond-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-mark" aria-hidden="true"><img src="/src/assets/frog.png" alt="" /></span>
+        <span class="fw-semibold">Frog Runner</span>
+      </a>
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-ghost btn-sm nav-pill" href="index.html">Landing</a>
+        <a class="btn btn-ghost btn-sm nav-pill" href="three.html">3D Pond</a>
+        <a class="btn btn-ghost btn-sm nav-pill" href="forms.html">Forms</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+      <div class="hud-pill">Score: <strong><span id="score">0</span></strong></div>
+      <div class="hud-pill">Coins: <strong><span id="coins">0</span></strong></div>
+      <div class="hud-pill">Best: <strong><span id="best">0</span></strong></div>
+
+      <div class="ms-auto d-flex flex-wrap gap-2 align-items-center">
+        <button class="btn btn-sm btn-leaf" id="startBtn">Start</button>
+        <button class="btn btn-sm btn-ghost" id="muteBtn">Mute</button>
+        <div class="d-flex align-items-center gap-2">
+          <span class="small small-muted">Vol</span>
+          <input id="volSlider" type="range" min="0" max="1" step="0.01" value="0.6" />
+        </div>
+        <button class="btn btn-sm btn-ghost" id="fsBtn">Fullscreen</button>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <canvas id="game" width="960" height="540"></canvas>
+      <div class="mt-3 small-muted">
+        Controls: Space / ↑ to Jump. Press R to begin.
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/gamePage.js"></script>
+</body>
+</html>
