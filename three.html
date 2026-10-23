@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frog Runner - 3D Scene</title>
+</head>
+<body class="pond">
+  <nav class="navbar navbar-expand-lg navbar-dark pond-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="brand-mark" aria-hidden="true"><img src="/src/assets/frog.png" alt="" /></span>
+        <span class="fw-semibold">Frog Runner</span>
+      </a>
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-ghost btn-sm nav-pill" href="index.html">Landing</a>
+        <a class="btn btn-ghost btn-sm nav-pill" href="game.html">2D Game</a>
+        <a class="btn btn-ghost btn-sm nav-pill" href="forms.html">Forms</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="card glass-card">
+          <div class="card-body">
+            <span class="badge rounded-pill badge-leaf mb-2">Three.js</span>
+            <h5 class="fw-semibold mb-2">3D Pond Exhibit</h5>
+            <p class="mb-3 small-muted">
+              Drag to rotate and scroll to zoom. This page demonstrates the required 3D scene setup with animation and interaction.
+            </p>
+            <div class="p-3 rounded-4 form-surface">
+              <div class="fw-semibold">Controls</div>
+              <ul class="mb-0 small-muted">
+                <li>Drag: orbit</li>
+                <li>Scroll: zoom</li>
+                <li>Click the canvas to focus</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="three-frame ratio ratio-16x9">
+          <div id="threeRoot" class="w-100 h-100"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/src/pages/threePage.js"></script>
+</body>
+</html>
